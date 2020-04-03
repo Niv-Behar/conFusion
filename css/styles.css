@@ -7,23 +7,23 @@
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .footer {
-    background-color: rgb(170, 91, 233,0.35);
+    background-color: rgba(146, 235, 184, 0.68);
     margin: 0px auto;
     padding: 30px 0px 30px 0px;
 }
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
-    background: #7f1296;
-    color: blanchedalmond;
+    background: rgba(15, 91, 146, 0.90);
+    color: #cfffff;
 }
 
 address {
     font-size: 80%;
     margin: 10px;
-    color: rgba(151, 146, 33, 0.91);
+    color: #000000;
 }
