@@ -23,6 +23,7 @@
 }
 
 address {
+    padding: 0px 0px 15px 0px;
     font-size: 80%;
     margin: 10px;
     color: #000000;
