@@ -1,58 +1,148 @@
 .row-header {
-    margin: 0px auto;
-    padding: 0px;
-}
+  margin: 0px auto;
+  padding: 0px 0px; }
 
 .row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    min-height: 350px;
-}
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
 
 .footer {
-    background-color:rgba(168, 243, 142, 0.48) ;
-    margin: 0px auto;
-    padding: 30px 0px 30px 0px;
-}
+  background: #d7fffb;
+  margin: 0px auto;
+  padding: 20px 0px; }
+
 .jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0px auto;
-    background:#242700 ;
-    color: #cfffff;
-}
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #001c07;
+  color: #d4d4d4; }
 
 address {
-    padding: 0px 0px 15px 0px;
-    font-size: 80%;
-    margin: 10px;
-    color: #000000;
-}
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
 
 body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
-}
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
 
 .navbar-dark {
-    background-color:#002517;
-}
-.tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-}
-.carousel {
-    background: #00273e;
-}
+  background-color: #00091f; }
 
-.carousel-item {
-    height: 300px;
-}
-.carousel-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-height: 300px;
-}
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+.carousel {
+  background: #00091f;
+  z-index: 0; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s; }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 10% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: rgba(255, 255, 255, 0);
+  width: 60%;
+  /* Could be more or less, depending on screen size */
+  min-width: 425px;
+  height: 60%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.6s;
+  animation-name: slideIn;
+  animation-duration: 0.6s; }
+
+.modal-header {
+  background-color: rgba(0, 21, 65, 0.97);
+  color: aliceblue; }
+
+.modal-body {
+  background-color: rgba(222, 229, 255, 0.96); }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fix {
+  border: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0); }

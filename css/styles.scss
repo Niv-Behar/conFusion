@@ -1,0 +1,183 @@
+$lt-gray: #ddd;
+$background-dark: #00091f;
+$background-light: #001c07;
+$background-pale: #d7fffb;
+$background-invisbl: rgba(255, 255, 255, 0.00);
+$carousel-item-height: 300px;
+$sec: 0.6s;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+.row-header {
+    @include zero-margin(0px,0px);
+}
+
+.row-content {
+    @include zero-margin(50px,0px);
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.footer {
+    background: $background-pale;
+    @include zero-margin(20px, 0px);
+}
+
+.jumbotron {
+    @include zero-margin(70px,30px);
+    background: $background-light;
+    color: #d4d4d4;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: $background-dark;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.carousel {
+    background: $background-dark;
+    z-index:0;
+    .carousel-item {
+        height: $carousel-item-height;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+    }
+}
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: $background-invisbl;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: $background-invisbl;
+    width: 60%; /* Could be more or less, depending on screen size */
+    min-width: 425px;
+    height: 60%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: $sec;
+    animation-name: slideIn;
+    animation-duration: $sec
+}
+
+.modal-header {
+    background-color:rgba(0, 21, 65, 0.97);
+    color:aliceblue;
+}
+
+.modal-body {
+    background-color:rgba(222, 229, 255, 0.96);
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fix {
+    border: $background-invisbl;
+    background: $background-invisbl;
+}
