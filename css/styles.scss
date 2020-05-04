@@ -45,6 +45,8 @@ body {
 
 .navbar-dark {
     background-color: $background-dark;
+    z-index: 1;
+    padding: 0px 0px 0px 5px;
 }
 
 .tab-content {
@@ -96,12 +98,12 @@ body {
 /* Modal Content/Box */
 .modal-content {
     background-color: $background-invisbl;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 3% auto; /* 15% from the top and centered */
     padding: 20px;
     border: $background-invisbl;
-    width: 60%; /* Could be more or less, depending on screen size */
-    min-width: 425px;
-    height: 60%;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 975px;
+    min-width: 400px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: $sec;
     animation-name: slideIn;

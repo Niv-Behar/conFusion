@@ -29,7 +29,9 @@ body {
   z-index: 0; }
 
 .navbar-dark {
-  background-color: #00091f; }
+  background-color: #00091f;
+  z-index: 1;
+  padding: 0px 0px 0px 5px; }
 
 .tab-content {
   border-left: 1px solid #ddd;
@@ -82,14 +84,14 @@ body {
 /* Modal Content/Box */
 .modal-content {
   background-color: rgba(255, 255, 255, 0);
-  margin: 10% auto;
+  margin: 3% auto;
   /* 15% from the top and centered */
   padding: 20px;
   border: rgba(255, 255, 255, 0);
-  width: 60%;
+  width: 80%;
   /* Could be more or less, depending on screen size */
-  min-width: 425px;
-  height: 60%;
+  max-width: 975px;
+  min-width: 400px;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.6s;
   animation-name: slideIn;
